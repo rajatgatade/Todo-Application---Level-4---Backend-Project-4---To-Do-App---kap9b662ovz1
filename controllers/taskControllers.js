@@ -156,7 +156,7 @@ const getallTask = async (req, res) => {
     const task = await Tasks.find(obj).sort({_id:-1});
 
     res.status(200).json({
-        status:'sucess',
+        status:'success',
         data:task
     })
 
